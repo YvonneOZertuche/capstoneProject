@@ -20,16 +20,16 @@ function Menu () {
   
   return (
 
-    <Navbar className='background-color: bg-red-600  text-white' variant='light'>
+    <Navbar className='background-color: bg-red-600 ' variant='light'>
 
-      <Container>
-        <Navbar.Brand className='font-serif' href='/'>
+      <Container className="text-9xl">
+        <Navbar.Brand className='font-serif text-white text-9xl' href='/'>
           Your Podcasts
         </Navbar.Brand>
 
-        <Nav className='justify-center font-mono antialiased text-green-800 background-color: bg-red-600 text-2xl'>
+        <Nav className='justify-center bold font-serif antialiased text-white background-color: bg-red-600 text-2xl'>
 
-          <div className="text-bold place-self-start">
+          <div className="bold text-white place-self-start">
           {/* <Nav.Link className='text-bold place-self-start' href='/'>YourPodcasts | </Nav.Link> */}
           {/* {loggedin}{loggedout} */}
           {/* {navSnippet} */}
@@ -37,9 +37,9 @@ function Menu () {
           {token ? 
           
           <>
-          <Nav.Link href='/searchpodcast'>Search </Nav.Link><Nav.Link href='/following'>Following </Nav.Link>
-        <Nav.Link href='/listened'>Listened</Nav.Link>
-        <Nav.Link href='/logout'>Logout </Nav.Link>
+          <Nav.Link className="text-white" href='/searchpodcast'>Search </Nav.Link><Nav.Link className="text-white" href='/following'>Following </Nav.Link>
+        <Nav.Link className="text-white" href='/listened'>Listened</Nav.Link>
+        <Nav.Link className="text-white" href='/logout'>Logout </Nav.Link>
         </>
           
           

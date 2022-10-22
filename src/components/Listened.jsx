@@ -59,17 +59,20 @@ const Listened = () => {
                 <audio controls src={podcastObj.audioLink}></audio>
               </figure>
               <p>{podcastObj.notes}</p>
+              <br  />
+              <br  />
               <button
-                className='font-mono px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
+                className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
                 onClick={() => deletePodcast(podcastObj.id)}>
                 Delete
               </button>{' '}
               </div>
               <br  />
+              <br  />
              
               <button
                 onClick={() => updatePodcast(podcastObj.id)}
-                className='font-mono px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'>
+                className='font-serifpx-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'>
                 Update
               </button>
               {isUpdate ? <Update id={podcastObj.id} /> : ''}

@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-
-// import { useDispatch } from 'react-redux'
-// import { useNavigate } from 'react-router-dom'
 import Update from './UpdateFollowing'
 
 const Following = () => {
@@ -27,7 +24,6 @@ const [podcastId, setPodcastId] = useState("")
       }
     }
     followPodcast()
-    // eslint-disable-next-line
   }, [triggerRefresh])
 
   console.log(followedPodcast)
@@ -66,17 +62,17 @@ const handleUpdate = (id) => {
              
              
               <button
-                className='font-mono px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-lg'
+                className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-lg'
                 onClick={() => deletePodcast(podcastObj.id)} >
                 Delete 
               </button>
               {" "}
               
-              <button className='font-mono px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
+              <button className='font-serif px-4 py-2 text-sm text-white duration-150 bg-red-600 rounded-md hover:bg-red-700 active:shadow-l'
                 onClick={() => handleUpdate(podcastObj.id)}>
                 Update 
               </button>
-              console.log(onClick)
+              
               <p>{podcastObj.notes}</p>
 
              
