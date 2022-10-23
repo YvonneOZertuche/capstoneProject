@@ -18,15 +18,15 @@ const Logout = () => {
   
   return (
     <>
-      <div className='align-center'>
+      <div className='font-serif bg-red-500 text-2xl text-end'>
       <button
-        className="font-mono py-3 mt-4 btn btn-lg btn-danger btn-block text-black "
+        className='mr-7 pl-3 text-end py-2 px-5 text-white'
         onClick={(userLogout)}
         >
         Logout Here
       </button>
       </div>
-      {/* <div className='z-30'>
+      <div className='divide-y divide-solid divide-black'>
         <img
           className='image-fluid justify-content-center'
           src={pic2}
@@ -34,7 +34,7 @@ const Logout = () => {
           alt='Listen to a podcast'
         />
 
-      </div> */}
+      </div>
       
     </>
 

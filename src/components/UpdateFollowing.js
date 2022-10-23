@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-
+import Modal from './Modal'
+import Updates from './Updates'
 
 
 const Update = (props) => {
@@ -24,12 +25,15 @@ const Update = (props) => {
   return (
   
     <>
-     <form >
+
+    <Updates />
+     {/* <form >
+    
       <input type = 'text' onChange={(e) => setIsUpdate(e.target.value)}></input>
-      <button onClick={(e) => handleSubmit(e)}className='font-mono py-20 mt-4 btn btn-lg btn-danger btn-block'>
+      <button onClick={(e) => handleSubmit(e)}className='font-serif py-20 mt-4 btn btn-lg btn-danger btn-block'>
         Submit
       </button>
-    </form> 
+    </form>  */}
 
     </>
   )
